@@ -43,6 +43,7 @@ create table if not exists public.dogdocs_documents (
 create index if not exists dogdocs_profiles_org_idx on public.dogdocs_profiles(organization_id);
 create index if not exists dogdocs_purchases_user_idx on public.dogdocs_purchases(user_id, created_at desc);
 create index if not exists dogdocs_purchases_org_idx on public.dogdocs_purchases(organization_id, created_at desc);
+create unique index if not exists dogdocs_purchases_provider_reference_uidx on public.dogdocs_purchases(provider_reference) where provider_reference is not null;
 create index if not exists dogdocs_documents_user_idx on public.dogdocs_documents(user_id, updated_at desc);
 create index if not exists dogdocs_documents_org_idx on public.dogdocs_documents(organization_id, updated_at desc);
 create index if not exists dogdocs_documents_buyer_idx on public.dogdocs_documents(buyer_id, updated_at desc);
