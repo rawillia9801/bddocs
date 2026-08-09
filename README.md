@@ -10,7 +10,7 @@ A Vercel-hosted Next.js application for purchasing, customizing, saving, and reu
 - Per-user Supabase documents protected by Row Level Security
 - Guided editor for logo, header, body, footer, clause selection, custom clauses, and state
 
-Supabase is intentionally unconnected. Add the values from `.env.example` to Vercel when the project is ready.
+The application is connected to the My Dog Portal Supabase project. Add the public values from `.env.example` to the corresponding Vercel project environment variables before deployment.
 
 ## Verification
 
