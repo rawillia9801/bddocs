@@ -10,7 +10,7 @@ export type DocumentOffering = {
 
 export const documentOfferings: readonly DocumentOffering[] = [
   { key: "document-single", name: "DogBreederDocs — One Editable Form", description: "One selected breeder document, saved to the purchaser's account for unlimited editing and reuse.", price: "9.99", productType: "single" },
-  { key: "document-packet", name: "DogBreederDocs — Complete Breeder Packet", description: "The complete DogBreederDocs library, saved to the purchaser's account for unlimited editing and reuse.", price: "19.95", productType: "packet" },
+  { key: "document-packet", name: "DogBreederDocs — Complete Breeder Packet", description: "The complete DogBreederDocs library, saved to the purchaser's account for unlimited editing and reuse.", price: "29.95", productType: "packet" },
 ] as const;
 
 type PayPalLink = { href?: string; rel?: string };
